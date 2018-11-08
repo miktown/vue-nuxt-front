@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="20px" viewBox="0 0 60 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" stroke="#D0021B" fill-rule="nonzero" cx="10" cy="10" r="9.5"></circle>
+        <circle id="Oval-2" stroke="#1FA3EA" fill-rule="nonzero" cx="30" cy="10" r="9.5"></circle>
+        <polygon id="Shape" fill="#1FA3EA" points="48.5 12.3283582 45.875 9.82089552 45 10.6567164 48.5 14 56 6.8358209 55.125 6"></polygon>
+        <circle id="Oval-2" stroke="#1FA3EA" fill-rule="nonzero" cx="50" cy="10" r="9.5"></circle>
+    </g>
+</svg>

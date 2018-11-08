@@ -1,0 +1,40 @@
+// Griddy Sections
+
+.c-gridHome {
+	padding: 8px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, calc(50vw - 8px));
+	grid-gap: 8px;
+	justify-items: stretch;
+	align-items: stretch;
+	grid-auto-flow: row;
+	@for $i from 1 to 10 {
+		.item#{$i} {
+			grid-area: item#{$i};
+		}
+	}
+	grid-template-areas:
+		"item1 item1 item1 item2 item2 item2"
+		"item3 item3 item3 item3 item4 item4"
+		"item5 item5 item5 item6 item6 item6"
+		"item7 item7 item7 item7 item7 item7"
+		"item8 item8 item8 item9 item9 item9";
+	&>div {
+		background-image: url(../images/home/slider.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		p {
+			position: absolute;
+			bottom: 0px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 12px;
+			width: 100%;
+			max-width: 90%;
+			left: 50%;
+			transform: translateX(-50%)
+		}
+	}
+}

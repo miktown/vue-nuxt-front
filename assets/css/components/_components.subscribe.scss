@@ -1,0 +1,65 @@
+.c-subscribe {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+	.email_input {
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 1px solid #f7f7f7;
+		padding: 20px 0;
+		outline: none;
+		width: 100%;
+	}
+	.check {
+		position: relative;
+    margin-top: 15px;
+    width: 100%;
+    &.error {
+      label span {
+        background-position: 0 0;
+      }
+    }
+	}
+	input[type='checkbox'] {
+		position: absolute;
+		top: 0;
+		z-index: 10;
+		width: 20px;
+		height: 20px;
+		opacity: 0;
+    cursor: pointer;
+    outline: none;
+	}
+	input[type='checkbox']:checked + label span {
+    background-position: -40px 0;
+	}
+	input[type='checkbox'].error + label span {
+		background-position: 0 0;
+	}
+	label {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		margin-left: 28px;
+		color: #9b9b9b;
+    position: relative;
+    padding-top: 2px;
+		span {
+			display: block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			left: -28px;
+      background-image: url('../images/icons/check_sprite.svg');
+      background-size: auto 100%;
+      background-position: -20px 0;
+		}
+	}
+	a {
+		color: #1fa3ea;
+  }
+}

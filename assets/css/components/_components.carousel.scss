@@ -1,0 +1,114 @@
+.c-carouselHome {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	padding-top: 20px;
+	background: $light-gray;
+	&__container {
+		width: calc(80vw + 20px);
+		height: 110vw;
+	}
+	&__item {
+		height: 350px;
+		position: relative;
+		padding: 0 10px;
+		img {
+			width: 100%;
+			height: 350px;
+      object-fit: cover;
+    }
+  }
+  &__content {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		left: 20px;
+		color: #fff;
+		.title {
+			font-size: 30px;
+			line-height: 1.1;
+      margin-bottom: 15px;
+    }
+		p {
+      font-size: 14px
+    }
+  }
+	.VueCarousel-wrapper {
+		overflow: visible
+	}
+	.VueCarousel-dot {
+		padding: 3px !important;
+		button {
+			background-color: transparent !important;
+			border: 1px solid $corporate !important;
+		}
+		&.VueCarousel-dot--active {
+			button {
+				background-color: $corporate !important;
+			}
+		}
+	}
+}
+.c-carouselBlog {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  &__container {
+    width: calc(100vw - 42px);
+  }
+  &__item {
+    margin: 8px;
+		position: relative;
+    border: 1px solid #E5ECED;
+    background-color: #fff;
+		img {
+			width: 100%;
+    }
+  }
+  &__content {
+    min-height: 176px;
+    height: 100%;
+    padding: 20px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: $grey;
+    }
+    .categories {
+      font-size: 12px;
+      line-height: 1.25;
+      color: $grey;
+      a {
+        color: $corporate;
+      }
+    }
+  }
+  .VueCarousel-pagination {
+    width: 100vw !important;
+  }
+  .VueCarousel-slide {
+    width: calc(100vw - 42px);
+  }
+  .VueCarousel-wrapper {
+		overflow: visible
+	}
+  .VueCarousel-dot {
+		padding: 3px !important;
+		button {
+			background-color: transparent !important;
+			border: 1px solid $corporate !important;
+		}
+		&.VueCarousel-dot--active {
+			button {
+				background-color: $corporate !important;
+			}
+		}
+	}
+}

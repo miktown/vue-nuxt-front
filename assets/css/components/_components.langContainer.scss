@@ -1,0 +1,26 @@
+.c-langContainer{
+  position: relative;
+  &__listItem {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    &:active {
+      background-color: #f7f7f7;
+    }
+  }
+  &__flags {
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+  

@@ -1,0 +1,42 @@
+.c-chatHero {
+  position: absolute;
+  background-color: #050f17;
+  top: -120px;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  padding-top: 25px;
+  overflow: hidden;
+  &>img {
+		position: absolute;
+		top: 20px;
+		left: -50px;
+		width: 135px;
+		animation-name: pulse;
+		animation-duration: 1.5s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		animation-fill-mode: both;
+		animation-timing-function: linear;
+  }
+  p {
+		color: #fff;
+		text-align: center;
+		line-height: 1.25;
+		font-weight: 500;
+		font-size: 14px;
+		padding-bottom: 15px;
+		&.title {
+			font-size: 16px;
+			color: #1c91d0;
+		}
+  }
+  .c-close {
+	  top: 10px;
+	  right: 10px;
+  }
+}
+@keyframes pulse {
+  0% { transform: scale(1) rotate(0deg) }
+  100% { transform: scale(1.1) rotate(5deg) }
+}

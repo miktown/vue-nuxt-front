@@ -1,0 +1,15 @@
+.c-button {
+	border: 0;
+	appearance: none;
+
+	&--rounded {
+		border-radius: 100px;
+	}
+	&--blue {
+		background-color: $corporate;
+		color: #fff;
+	}
+	&--small {
+		padding: 10px 15px 12px;
+	}
+}
